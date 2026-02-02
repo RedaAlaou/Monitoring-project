@@ -1,0 +1,241 @@
+# Device Management Microservice - REST Client Tests
+# Use with VSCode REST Client extension or similar
+
+# Base URL
+@baseUrl = http://localhost:8001
+
+# =====================================================
+# Health Check
+# =====================================================
+
+GET {{baseUrl}}/health
+Accept: application/json
+
+###
+
+# =====================================================
+# Device Endpoints (Require JWT Token)
+# =====================================================
+
+# First, get a token from the Signing service
+# POST http://localhost:8000/users/auth
+# Content-Type: application/json
+#
+# {
+#     "email": "your-email@test.com",
+#     "password": "your-password"
+# }
+
+# Replace with your actual JWT token
+@authToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+
+# =====================================================
+# GET All Devices
+# =====================================================
+
+GET {{baseUrl}}/api/v1/devices
+Authorization: Bearer {{authToken}}
+Accept: application/json
+
+###
+
+# Get devices with pagination
+GET {{baseUrl}}/api/v1/devices?page=1&page_size=10
+Authorization: Bearer {{authToken}}
+Accept: application/json
+
+###
+
+# Get devices by status
+GET {{baseUrl}}/api/v1/devices?status=IN_STOCK
+Authorization: Bearer {{authToken}}
+Accept: application/json
+
+###
+
+# Get devices by type
+GET {{baseUrl}}/api/v1/devices?device_type=SENSOR
+Authorization: Bearer {{authToken}}
+Accept: application/json
+
+###
+
+# =====================================================
+# GET Devices by Category
+# =====================================================
+
+# Get in-stock devices
+GET {{baseUrl}}/api/v1/devices/in_stock
+Authorization: Bearer {{authToken}}
+Accept: application/json
+
+###
+
+# Get deployed devices
+GET {{baseUrl}}/api/v1/devices/deployed
+Authorization: Bearer {{authToken}}
+Accept: application/json
+
+###
+
+# Get devices under maintenance
+GET {{baseUrl}}/api/v1/devices/maintenance
+Authorization: Bearer {{authToken}}
+Accept: application/json
+
+###
+
+# =====================================================
+# GET Single Device
+# =====================================================
+
+GET {{baseUrl}}/api/v1/devices/1
+Authorization: Bearer {{authToken}}
+Accept: application/json
+
+###
+
+# =====================================================
+# CREATE Device
+# =====================================================
+
+POST {{baseUrl}}/api/v1/devices
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "name": "Temperature Sensor 001",
+    "type": "SENSOR",
+    "serial_number": "TEMP-001-2024",
+    "description": "Industrial temperature sensor",
+    "location": "Warehouse A",
+    "specifications": {
+        "temperature_range": "-40 to 125°C",
+        "accuracy": "±0.5°C",
+        "power": "3.3V"
+    }
+}
+
+###
+
+# =====================================================
+# UPDATE Device
+# =====================================================
+
+PUT {{baseUrl}}/api/v1/devices/1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "name": "Temperature Sensor 001 Updated",
+    "description": "Updated description",
+    "location": "Warehouse B"
+}
+
+###
+
+# =====================================================
+# UPDATE Device Status
+# =====================================================
+
+PUT {{baseUrl}}/api/v1/devices/1/status
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "status": "DEPLOYED",
+    "location": "Building C - Floor 2",
+    "notes": "Deployed for testing"
+}
+
+###
+
+# =====================================================
+# DEPLOY Device
+# =====================================================
+
+PUT {{baseUrl}}/api/v1/devices/1/deploy
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "location": "Production Line 1",
+    "notes": "Deploying to main production line"
+}
+
+###
+
+# =====================================================
+# RECALL Device
+# =====================================================
+
+PUT {{baseUrl}}/api/v1/devices/1/recall
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "location": "Warehouse B",
+    "notes": "Recalled for maintenance"
+}
+
+###
+
+# =====================================================
+# SEND Device to Maintenance
+# =====================================================
+
+PUT {{baseUrl}}/api/v1/devices/1/maintenance
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "notes": "Scheduled maintenance",
+    "expected_return_date": "2024-12-01"
+}
+
+###
+
+# =====================================================
+# DELETE Device (Retire)
+# =====================================================
+
+DELETE {{baseUrl}}/api/v1/devices/1
+Authorization: Bearer {{authToken}}
+Accept: application/json
+
+###
+
+# =====================================================
+# Error Cases - Invalid Token
+# =====================================================
+
+GET {{baseUrl}}/api/v1/devices
+Authorization: Bearer invalid_token
+Accept: application/json
+
+###
+
+# =====================================================
+# Error Cases - Device Not Found
+# =====================================================
+
+GET {{baseUrl}}/api/v1/devices/9999
+Authorization: Bearer {{authToken}}
+Accept: application/json
+
+###
+
+# =====================================================
+# Error Cases - Duplicate Serial Number
+# =====================================================
+
+POST {{baseUrl}}/api/v1/devices
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "name": "Duplicate Device",
+    "type": "SENSOR",
+    "serial_number": "TEMP-001-2024",
+    "description": "This should fail"
+}

@@ -1,0 +1,236 @@
+# Unified Docker Compose for IoT Monitoring System
+# Version: 3.8
+
+services:
+  # PostgreSQL Database for Signing and Device Management
+  postgres:
+    image: postgres:15-alpine
+    container_name: iot-postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: db_auth
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend-api-v1/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - iot-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d db_auth"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # PostgreSQL Database for Device Management
+  postgres-device:
+    image: postgres:15-alpine
+    container_name: iot-postgres-device
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: db_device_management
+    volumes:
+      - postgres_device_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    networks:
+      - iot-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d db_device_management"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # MongoDB for Monitoring
+  mongodb:
+    image: mongo:7.0
+    container_name: iot-mongodb
+    environment:
+      MONGO_INITDB_DATABASE: monitoring
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - iot-network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis for Caching
+  redis:
+    image: redis:7-alpine
+    container_name: iot-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - iot-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # RabbitMQ for Messaging
+  rabbitmq:
+    image: rabbitmq:3.12-management
+    container_name: iot-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - iot-network
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Signing Microservice
+  signing:
+    build:
+      context: ./backend-api-v1
+      dockerfile: Dockerfile
+    image: iot-signing:1.0
+    container_name: iot-signing
+    environment:
+      SERVER_DB: postgres
+      NAME_DB: db_auth
+      USER_DB: admin
+      PASSWORD_DB: 1234
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+      SECRET_KEY: "your-jwt-secret-key-change-this-in-production"
+      EXPIRE_TIME: "30"
+    ports:
+      - "8000:8000"
+    networks:
+      - iot-network
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Device Management Microservice
+  device-management:
+    build:
+      context: ./device-management
+      dockerfile: Dockerfile
+    image: iot-device-management:1.0
+    container_name: iot-device-management
+    environment:
+      SERVER_DB: postgres-device
+      NAME_DB: db_device_management
+      USER_DB: admin
+      PASSWORD_DB: 1234
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: "5672"
+      JWT_SECRET_KEY: "your-jwt-secret-key-change-this-in-production"
+      JWT_ALGORITHM: HS256
+      DB_POOL_SIZE: "50"
+      DB_MAX_OVERFLOW: "30"
+      DB_POOL_RECYCLE: "1800"
+    ports:
+      - "8001:8001"
+    networks:
+      - iot-network
+    depends_on:
+      postgres-device:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Monitoring Microservice
+  monitoring:
+    build:
+      context: ./monitoring
+      dockerfile: Dockerfile
+    image: iot-monitoring:1.0
+    container_name: iot-monitoring
+    environment:
+      MONGODB_URL: mongodb://mongodb:27017
+      MONGODB_DB: monitoring
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: "5672"
+      RABBITMQ_USER: guest
+      RABBITMQ_PASSWORD: guest
+    ports:
+      - "8002:8002"
+    networks:
+      - iot-network
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Nginx API Gateway
+  nginx:
+    image: nginx:alpine
+    container_name: iot-nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - iot-network
+    depends_on:
+      signing:
+        condition: service_started
+      device-management:
+        condition: service_started
+      monitoring:
+        condition: service_started
+    restart: unless-stopped
+
+  # Frontend React Application
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: iot-frontend:1.0
+    container_name: iot-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+      - REACT_APP_DEVICE_API_URL=http://localhost:8001
+      - REACT_APP_MONITORING_API_URL=http://localhost:8002
+    networks:
+      - iot-network
+    depends_on:
+      - signing
+      - device-management
+      - monitoring
+    restart: unless-stopped
+
+networks:
+  iot-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  postgres_device_data:
+  mongodb_data:
+  redis_data:
+  rabbitmq_data:

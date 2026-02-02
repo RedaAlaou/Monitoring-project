@@ -1,0 +1,864 @@
+2026-01-31 14:25:20,423 - INFO - Starting Device Management Microservice...
+2026-01-31 14:34:29,944 - INFO - Starting Device Management Microservice...
+2026-01-31 14:40:01,446 - INFO - Starting Device Management Microservice...
+2026-01-31 14:40:01,497 - INFO - Database tables initialized
+2026-01-31 14:40:06,371 - INFO - Starting Device Management Microservice...
+2026-01-31 14:40:06,405 - INFO - Database tables initialized
+2026-01-31 14:42:30,609 - INFO - Creating new device: HP
+2026-01-31 14:42:30,631 - INFO - Device created successfully with ID: 1
+2026-01-31 14:42:58,909 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 14:43:44,410 - INFO - Getting in-stock devices
+2026-01-31 14:43:53,516 - INFO - Getting deployed devices
+2026-01-31 14:44:21,487 - INFO - Getting device with ID: 1
+2026-01-31 16:55:28,933 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 16:55:28,952 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 16:56:17,826 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 16:56:17,832 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 16:57:34,917 - INFO - Creating new device: HP
+2026-01-31 16:59:22,874 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 16:59:22,891 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 17:01:39,948 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 17:03:02,643 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 17:03:02,652 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 17:04:49,160 - INFO - Creating new device: Temperature Sensor 001
+2026-01-31 17:04:49,174 - INFO - Device created successfully with ID: 2
+2026-01-31 17:04:51,620 - INFO - Creating new device: Humidity Sensor 001
+2026-01-31 17:04:51,629 - INFO - Device created successfully with ID: 3
+2026-01-31 17:04:54,728 - INFO - Creating new device: IoT Gateway 001
+2026-01-31 17:04:54,738 - INFO - Device created successfully with ID: 4
+2026-01-31 17:04:56,446 - INFO - Creating new device: Smart Valve Controller
+2026-01-31 17:04:56,456 - INFO - Device created successfully with ID: 5
+2026-01-31 17:04:58,019 - INFO - Creating new device: HVAC Controller 001
+2026-01-31 17:04:58,031 - INFO - Device created successfully with ID: 6
+2026-01-31 17:04:59,684 - INFO - Updating device: 1
+2026-01-31 17:04:59,692 - INFO - Device 1 updated successfully
+2026-01-31 17:05:07,748 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 17:05:07,754 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 17:05:25,638 - INFO - Deploying device 2 to: Fes
+2026-01-31 17:05:25,651 - INFO - Device 2 deployed successfully
+2026-01-31 17:05:25,661 - INFO - Getting devices - status: None, type: None, page: 1
+2026-01-31 19:02:44,772 - INFO - Starting Device Management Microservice...
+2026-01-31 19:11:23,830 - INFO - Starting Device Management Microservice...
+2026-01-31 19:12:06,813 - INFO - Starting Device Management Microservice...
+2026-01-31 19:12:19,667 - INFO - Starting Device Management Microservice...
+2026-01-31 18:33:40,890 - INFO - Getting devices - status: None, type: None, page: 1
+2026-02-01 12:31:34,049 - INFO - Starting Device Management Microservice...
+2026-02-01 12:31:34,145 - INFO - Database tables initialized
+2026-02-01 12:47:47,846 - INFO - Creating new device: E2E Test Sensor
+2026-02-01 12:47:47,879 - INFO - Device created successfully with ID: 7
+2026-02-01 12:58:18,877 - INFO - Starting Device Management Microservice...
+2026-02-01 12:59:49,283 - INFO - Starting Device Management Microservice...
+2026-02-01 12:59:49,381 - INFO - Database tables initialized
+2026-02-01 13:21:35,956 - INFO - Creating new device: E2E Test Sensor
+2026-02-01 13:21:36,113 - INFO - Device created successfully with ID: 1
+2026-02-01 13:25:24,094 - INFO - Creating new device: E2E Test Sensor
+2026-02-01 13:25:24,254 - INFO - Device created successfully with ID: 2
+2026-02-01 13:25:59,372 - INFO - Starting Device Management Microservice...
+2026-02-01 13:26:32,036 - INFO - Starting Device Management Microservice...
+2026-02-01 13:26:32,137 - INFO - Database tables initialized
+2026-02-01 13:26:39,185 - INFO - User test_1769952398@example.com creating new device: E2E Test Sensor
+2026-02-01 13:26:39,206 - INFO - Device created successfully with ID: 1
+2026-02-01 13:26:39,216 - INFO - User test_1769952398@example.com reserving device 1
+2026-02-01 13:26:39,255 - ERROR - RabbitMQ connection failed: 
+2026-02-01 13:26:39,255 - ERROR - RabbitMQ publish error: 
+2026-02-01 13:26:39,256 - INFO - Device 1 reserved successfully
+2026-02-01 13:26:39,266 - INFO - User test_1769952398@example.com deploying device 1 to: Field Office A
+2026-02-01 13:26:39,298 - INFO - Device 1 deployed successfully
+2026-02-01 13:26:39,325 - ERROR - RabbitMQ connection failed: 
+2026-02-01 13:26:39,326 - ERROR - RabbitMQ publish error: 
+2026-02-01 13:30:31,701 - INFO - Starting Device Management Microservice...
+2026-02-01 13:30:31,736 - INFO - Database tables initialized
+2026-02-01 13:30:57,394 - INFO - User test_1769952656@example.com creating new device: E2E Test Sensor
+2026-02-01 13:30:57,419 - INFO - Device created successfully with ID: 2
+2026-02-01 13:30:57,428 - INFO - User test_1769952656@example.com reserving device 2
+2026-02-01 13:30:57,489 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 13:30:57,493 - INFO - Published event: device.event
+2026-02-01 13:30:57,494 - INFO - Device 2 reserved successfully
+2026-02-01 13:30:57,502 - INFO - User test_1769952656@example.com deploying device 2 to: Field Office A
+2026-02-01 13:30:57,534 - INFO - Device 2 deployed successfully
+2026-02-01 13:30:57,559 - INFO - Published event: device.telemetry
+2026-02-01 13:31:56,092 - INFO - User test_1769952715@example.com creating new device: E2E Test Sensor
+2026-02-01 13:31:56,117 - INFO - Device created successfully with ID: 3
+2026-02-01 13:31:56,126 - INFO - User test_1769952715@example.com reserving device 3
+2026-02-01 13:31:56,154 - INFO - Published event: device.event
+2026-02-01 13:31:56,154 - INFO - Device 3 reserved successfully
+2026-02-01 13:31:56,163 - INFO - User test_1769952715@example.com deploying device 3 to: Field Office A
+2026-02-01 13:31:56,186 - INFO - Device 3 deployed successfully
+2026-02-01 13:31:56,199 - INFO - Published event: device.telemetry
+2026-02-01 13:32:13,001 - INFO - User test_1769952732@example.com creating new device: E2E Test Sensor
+2026-02-01 13:32:13,059 - INFO - Device created successfully with ID: 4
+2026-02-01 13:32:13,070 - INFO - User test_1769952732@example.com reserving device 4
+2026-02-01 13:32:13,086 - INFO - Published event: device.event
+2026-02-01 13:32:13,087 - INFO - Device 4 reserved successfully
+2026-02-01 13:32:13,097 - INFO - User test_1769952732@example.com deploying device 4 to: Field Office A
+2026-02-01 13:32:13,109 - INFO - Device 4 deployed successfully
+2026-02-01 13:32:13,130 - INFO - Published event: device.telemetry
+2026-02-01 13:32:23,113 - INFO - User test_1769952742@example.com creating new device: E2E Test Sensor
+2026-02-01 13:32:23,198 - INFO - Device created successfully with ID: 5
+2026-02-01 13:32:23,209 - INFO - User test_1769952742@example.com reserving device 5
+2026-02-01 13:32:23,238 - INFO - Published event: device.event
+2026-02-01 13:32:23,239 - INFO - Device 5 reserved successfully
+2026-02-01 13:32:23,247 - INFO - User test_1769952742@example.com deploying device 5 to: Field Office A
+2026-02-01 13:32:23,274 - INFO - Device 5 deployed successfully
+2026-02-01 13:32:23,288 - INFO - Published event: device.telemetry
+2026-02-01 13:40:35,227 - ERROR - JWT decoding error: Signature has expired.
+2026-02-01 13:40:35,230 - ERROR - JWT decoding error: Signature has expired.
+2026-02-01 13:41:01,044 - ERROR - JWT decoding error: Signature has expired.
+2026-02-01 13:41:01,048 - ERROR - JWT decoding error: Signature has expired.
+2026-02-01 13:41:24,593 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:41:24,605 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:41:32,858 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:41:32,865 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:41:38,054 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:41:38,062 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:43:41,755 - INFO - Published event: device.telemetry
+2026-02-01 13:43:41,774 - INFO - Published event: device.telemetry
+2026-02-01 13:43:41,811 - INFO - Published event: device.telemetry
+2026-02-01 13:43:41,819 - INFO - Published event: device.telemetry
+2026-02-01 13:43:43,844 - INFO - Published event: device.telemetry
+2026-02-01 13:43:45,871 - INFO - Published event: device.telemetry
+2026-02-01 13:43:46,769 - INFO - Published event: device.telemetry
+2026-02-01 13:43:47,903 - INFO - Published event: device.telemetry
+2026-02-01 13:43:49,935 - INFO - Published event: device.telemetry
+2026-02-01 13:43:51,776 - INFO - Published event: device.telemetry
+2026-02-01 13:43:51,793 - INFO - Published event: device.telemetry
+2026-02-01 13:43:51,975 - INFO - Published event: device.telemetry
+2026-02-01 13:43:54,015 - INFO - Published event: device.telemetry
+2026-02-01 13:43:56,046 - INFO - Published event: device.telemetry
+2026-02-01 13:43:56,806 - INFO - Published event: device.telemetry
+2026-02-01 13:43:56,836 - INFO - Published event: device.telemetry
+2026-02-01 13:43:58,071 - INFO - Published event: device.telemetry
+2026-02-01 13:44:00,096 - INFO - Published event: device.telemetry
+2026-02-01 13:44:01,788 - INFO - Published event: device.telemetry
+2026-02-01 13:44:01,841 - INFO - Published event: device.telemetry
+2026-02-01 13:44:02,139 - INFO - Published event: device.telemetry
+2026-02-01 13:44:04,171 - INFO - Published event: device.telemetry
+2026-02-01 13:44:06,216 - INFO - Published event: device.telemetry
+2026-02-01 13:44:06,877 - INFO - Published event: device.telemetry
+2026-02-01 13:44:08,252 - INFO - Published event: device.telemetry
+2026-02-01 13:44:10,276 - INFO - Published event: device.telemetry
+2026-02-01 13:44:11,813 - INFO - Published event: device.telemetry
+2026-02-01 13:44:11,877 - INFO - Published event: device.telemetry
+2026-02-01 13:44:11,907 - INFO - Published event: device.telemetry
+2026-02-01 13:44:12,309 - INFO - Published event: device.telemetry
+2026-02-01 13:44:14,325 - INFO - Published event: device.telemetry
+2026-02-01 13:44:16,342 - INFO - Published event: device.telemetry
+2026-02-01 13:44:16,919 - INFO - Published event: device.telemetry
+2026-02-01 13:44:18,359 - INFO - Published event: device.telemetry
+2026-02-01 13:44:20,387 - INFO - Published event: device.telemetry
+2026-02-01 13:44:21,827 - INFO - Published event: device.telemetry
+2026-02-01 13:44:21,929 - INFO - Published event: device.telemetry
+2026-02-01 13:44:22,423 - INFO - Published event: device.telemetry
+2026-02-01 13:44:24,441 - INFO - Published event: device.telemetry
+2026-02-01 13:44:26,463 - INFO - Published event: device.telemetry
+2026-02-01 13:44:26,878 - INFO - Published event: device.telemetry
+2026-02-01 13:44:26,955 - INFO - Published event: device.telemetry
+2026-02-01 13:44:28,493 - INFO - Published event: device.telemetry
+2026-02-01 13:44:30,519 - INFO - Published event: device.telemetry
+2026-02-01 13:44:31,876 - INFO - Published event: device.telemetry
+2026-02-01 13:44:31,999 - INFO - Published event: device.telemetry
+2026-02-01 13:44:32,601 - INFO - Published event: device.telemetry
+2026-02-01 13:44:34,629 - INFO - Published event: device.telemetry
+2026-02-01 13:44:36,667 - INFO - Published event: device.telemetry
+2026-02-01 13:44:37,029 - INFO - Published event: device.telemetry
+2026-02-01 13:44:38,702 - INFO - Published event: device.telemetry
+2026-02-01 13:44:40,738 - INFO - Published event: device.telemetry
+2026-02-01 13:44:41,930 - INFO - Published event: device.telemetry
+2026-02-01 13:44:41,960 - INFO - Published event: device.telemetry
+2026-02-01 13:44:42,042 - INFO - Published event: device.telemetry
+2026-02-01 13:44:42,756 - INFO - Published event: device.telemetry
+2026-02-01 13:44:44,777 - INFO - Published event: device.telemetry
+2026-02-01 13:44:46,808 - INFO - Published event: device.telemetry
+2026-02-01 13:44:47,071 - INFO - Published event: device.telemetry
+2026-02-01 13:44:48,835 - INFO - Published event: device.telemetry
+2026-02-01 13:44:50,861 - INFO - Published event: device.telemetry
+2026-02-01 13:44:51,929 - INFO - Published event: device.telemetry
+2026-02-01 13:44:52,096 - INFO - Published event: device.telemetry
+2026-02-01 13:44:52,881 - INFO - Published event: device.telemetry
+2026-02-01 13:44:54,914 - INFO - Published event: device.telemetry
+2026-02-01 13:44:56,939 - INFO - Published event: device.telemetry
+2026-02-01 13:44:56,954 - INFO - Published event: device.telemetry
+2026-02-01 13:44:57,123 - INFO - Published event: device.telemetry
+2026-02-01 13:44:58,975 - INFO - Published event: device.telemetry
+2026-02-01 13:45:00,998 - INFO - Published event: device.telemetry
+2026-02-01 13:45:01,963 - INFO - Published event: device.telemetry
+2026-02-01 13:45:02,167 - INFO - Published event: device.telemetry
+2026-02-01 13:45:03,056 - INFO - Published event: device.telemetry
+2026-02-01 13:45:05,095 - INFO - Published event: device.telemetry
+2026-02-01 13:45:07,116 - INFO - Published event: device.telemetry
+2026-02-01 13:45:07,205 - INFO - Published event: device.telemetry
+2026-02-01 13:45:09,142 - INFO - Published event: device.telemetry
+2026-02-01 13:45:11,177 - INFO - Published event: device.telemetry
+2026-02-01 13:45:12,012 - INFO - Published event: device.telemetry
+2026-02-01 13:45:12,044 - INFO - Published event: device.telemetry
+2026-02-01 13:45:12,231 - INFO - Published event: device.telemetry
+2026-02-01 13:45:13,209 - INFO - Published event: device.telemetry
+2026-02-01 13:45:15,228 - INFO - Published event: device.telemetry
+2026-02-01 13:45:17,259 - INFO - Published event: device.telemetry
+2026-02-01 13:45:17,291 - INFO - Published event: device.telemetry
+2026-02-01 13:45:19,320 - INFO - Published event: device.telemetry
+2026-02-01 13:45:21,352 - INFO - Published event: device.telemetry
+2026-02-01 13:45:22,032 - INFO - Published event: device.telemetry
+2026-02-01 13:45:22,266 - INFO - Published event: device.telemetry
+2026-02-01 13:45:23,379 - INFO - Published event: device.telemetry
+2026-02-01 13:45:25,419 - INFO - Published event: device.telemetry
+2026-02-01 13:45:27,046 - INFO - Published event: device.telemetry
+2026-02-01 13:45:27,268 - INFO - Published event: device.telemetry
+2026-02-01 13:45:27,449 - INFO - Published event: device.telemetry
+2026-02-01 13:45:29,465 - INFO - Published event: device.telemetry
+2026-02-01 13:45:31,523 - INFO - Published event: device.telemetry
+2026-02-01 13:45:32,058 - INFO - Published event: device.telemetry
+2026-02-01 13:45:32,324 - INFO - Published event: device.telemetry
+2026-02-01 13:45:33,557 - INFO - Published event: device.telemetry
+2026-02-01 13:45:35,593 - INFO - Published event: device.telemetry
+2026-02-01 13:45:37,359 - INFO - Published event: device.telemetry
+2026-02-01 13:45:37,634 - INFO - Published event: device.telemetry
+2026-02-01 13:45:39,621 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:45:39,631 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:45:39,656 - INFO - Published event: device.telemetry
+2026-02-01 13:45:41,678 - INFO - Published event: device.telemetry
+2026-02-01 13:45:42,125 - INFO - Published event: device.telemetry
+2026-02-01 13:45:42,156 - INFO - Published event: device.telemetry
+2026-02-01 13:45:42,390 - INFO - Published event: device.telemetry
+2026-02-01 13:45:43,708 - INFO - Published event: device.telemetry
+2026-02-01 13:45:45,739 - INFO - Published event: device.telemetry
+2026-02-01 13:45:47,407 - INFO - Published event: device.telemetry
+2026-02-01 13:45:47,773 - INFO - Published event: device.telemetry
+2026-02-01 13:45:49,813 - INFO - Published event: device.telemetry
+2026-02-01 13:45:51,826 - INFO - Published event: device.telemetry
+2026-02-01 13:45:52,145 - INFO - Published event: device.telemetry
+2026-02-01 13:45:52,412 - INFO - Published event: device.telemetry
+2026-02-01 13:45:53,857 - INFO - Published event: device.telemetry
+2026-02-01 13:45:55,870 - INFO - Published event: device.telemetry
+2026-02-01 13:45:57,144 - INFO - Published event: device.telemetry
+2026-02-01 13:45:57,419 - INFO - Published event: device.telemetry
+2026-02-01 13:45:57,894 - INFO - Published event: device.telemetry
+2026-02-01 13:45:59,919 - INFO - Published event: device.telemetry
+2026-02-01 13:46:01,959 - INFO - Published event: device.telemetry
+2026-02-01 13:46:02,149 - INFO - Published event: device.telemetry
+2026-02-01 13:46:02,440 - INFO - Published event: device.telemetry
+2026-02-01 13:46:03,989 - INFO - Published event: device.telemetry
+2026-02-01 13:46:06,013 - INFO - Published event: device.telemetry
+2026-02-01 13:46:07,476 - INFO - Published event: device.telemetry
+2026-02-01 13:46:08,035 - INFO - Published event: device.telemetry
+2026-02-01 13:46:10,067 - INFO - Published event: device.telemetry
+2026-02-01 13:46:12,098 - INFO - Published event: device.telemetry
+2026-02-01 13:46:12,158 - INFO - Published event: device.telemetry
+2026-02-01 13:46:12,200 - INFO - Published event: device.telemetry
+2026-02-01 13:46:12,500 - INFO - Published event: device.telemetry
+2026-02-01 13:46:14,128 - INFO - Published event: device.telemetry
+2026-02-01 13:46:16,135 - INFO - Published event: device.telemetry
+2026-02-01 13:46:17,511 - INFO - Published event: device.telemetry
+2026-02-01 13:46:18,161 - INFO - Published event: device.telemetry
+2026-02-01 13:46:20,185 - INFO - Published event: device.telemetry
+2026-02-01 13:46:22,202 - INFO - Published event: device.telemetry
+2026-02-01 13:46:22,230 - INFO - Published event: device.telemetry
+2026-02-01 13:46:22,524 - INFO - Published event: device.telemetry
+2026-02-01 13:46:24,258 - INFO - Published event: device.telemetry
+2026-02-01 13:46:26,269 - INFO - Published event: device.telemetry
+2026-02-01 13:46:27,149 - INFO - Published event: device.telemetry
+2026-02-01 13:46:37,609 - INFO - Published event: device.telemetry
+2026-02-01 13:46:37,614 - INFO - Published event: device.telemetry
+2026-02-01 13:46:37,623 - INFO - Published event: device.telemetry
+2026-02-01 13:46:39,627 - INFO - Published event: device.telemetry
+2026-02-01 13:46:41,651 - INFO - Published event: device.telemetry
+2026-02-01 13:46:42,237 - INFO - Published event: device.telemetry
+2026-02-01 13:46:42,612 - INFO - Published event: device.telemetry
+2026-02-01 13:46:43,665 - INFO - Published event: device.telemetry
+2026-02-01 13:46:45,677 - INFO - Published event: device.telemetry
+2026-02-01 13:46:47,640 - INFO - Published event: device.telemetry
+2026-02-01 13:46:47,670 - INFO - Published event: device.telemetry
+2026-02-01 13:46:57,689 - INFO - Published event: device.telemetry
+2026-02-01 13:46:57,692 - INFO - Published event: device.telemetry
+2026-02-01 13:46:57,701 - INFO - Published event: device.telemetry
+2026-02-01 13:46:57,731 - INFO - Published event: device.telemetry
+2026-02-01 13:46:59,703 - INFO - Published event: device.telemetry
+2026-02-01 13:47:01,761 - INFO - Published event: device.telemetry
+2026-02-01 13:47:02,727 - INFO - Published event: device.telemetry
+2026-02-01 13:47:03,794 - INFO - Published event: device.telemetry
+2026-02-01 13:47:05,827 - INFO - Published event: device.telemetry
+2026-02-01 13:47:07,758 - INFO - Published event: device.telemetry
+2026-02-01 13:47:27,828 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 13:47:27,850 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 13:47:27,852 - INFO - Published event: device.telemetry
+2026-02-01 13:47:27,882 - INFO - Published event: device.telemetry
+2026-02-01 13:47:27,911 - INFO - Published event: device.telemetry
+2026-02-01 13:47:29,839 - INFO - Published event: device.telemetry
+2026-02-01 13:47:31,879 - INFO - Published event: device.telemetry
+2026-02-01 13:47:32,909 - INFO - Published event: device.telemetry
+2026-02-01 13:47:33,909 - INFO - Published event: device.telemetry
+2026-02-01 13:47:35,952 - INFO - Published event: device.telemetry
+2026-02-01 13:47:37,946 - INFO - Published event: device.telemetry
+2026-02-01 13:47:45,264 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:47:47,982 - INFO - Published event: device.telemetry
+2026-02-01 13:47:47,987 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:47:47,990 - INFO - Published event: device.telemetry
+2026-02-01 13:47:47,999 - INFO - Published event: device.telemetry
+2026-02-01 13:47:48,026 - INFO - Published event: device.telemetry
+2026-02-01 13:47:50,000 - INFO - Published event: device.telemetry
+2026-02-01 13:47:52,027 - INFO - Published event: device.telemetry
+2026-02-01 13:47:52,777 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:47:52,785 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:47:53,042 - INFO - Published event: device.telemetry
+2026-02-01 13:47:54,034 - INFO - Published event: device.telemetry
+2026-02-01 13:47:56,051 - INFO - Published event: device.telemetry
+2026-02-01 13:47:57,970 - INFO - Published event: device.telemetry
+2026-02-01 13:47:58,063 - INFO - Published event: device.telemetry
+2026-02-01 13:47:58,086 - INFO - Published event: device.telemetry
+2026-02-01 13:48:00,117 - INFO - Published event: device.telemetry
+2026-02-01 13:48:02,152 - INFO - Published event: device.telemetry
+2026-02-01 13:48:03,009 - INFO - Published event: device.telemetry
+2026-02-01 13:48:03,103 - INFO - Published event: device.telemetry
+2026-02-01 13:48:04,199 - INFO - Published event: device.telemetry
+2026-02-01 13:48:06,228 - INFO - Published event: device.telemetry
+2026-02-01 13:48:08,011 - INFO - Published event: device.telemetry
+2026-02-01 13:48:08,138 - INFO - Published event: device.telemetry
+2026-02-01 13:48:08,247 - INFO - Published event: device.telemetry
+2026-02-01 13:51:32,561 - ERROR - RabbitMQ publish error: (320, "CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'")
+2026-02-01 13:51:32,603 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 13:51:32,606 - INFO - Published event: device.telemetry
+2026-02-01 13:51:32,638 - INFO - Published event: device.telemetry
+2026-02-01 13:51:32,669 - INFO - Published event: device.telemetry
+2026-02-01 13:51:34,676 - INFO - Published event: device.telemetry
+2026-02-01 13:51:36,703 - INFO - Published event: device.telemetry
+2026-02-01 13:51:37,601 - INFO - Published event: device.telemetry
+2026-02-01 13:51:38,727 - INFO - Published event: device.telemetry
+2026-02-01 13:51:40,739 - INFO - Published event: device.telemetry
+2026-02-01 13:51:42,634 - INFO - Published event: device.telemetry
+2026-02-01 13:51:42,646 - INFO - Published event: device.telemetry
+2026-02-01 13:51:42,772 - INFO - Published event: device.telemetry
+2026-02-01 13:51:44,795 - INFO - Published event: device.telemetry
+2026-02-01 13:51:46,806 - INFO - Published event: device.telemetry
+2026-02-01 13:51:47,644 - INFO - Published event: device.telemetry
+2026-02-01 13:51:47,704 - INFO - Published event: device.telemetry
+2026-02-01 13:51:48,835 - INFO - Published event: device.telemetry
+2026-02-01 13:51:50,868 - INFO - Published event: device.telemetry
+2026-02-01 13:51:52,654 - INFO - Published event: device.telemetry
+2026-02-01 13:51:52,696 - INFO - Published event: device.telemetry
+2026-02-01 13:51:52,899 - INFO - Published event: device.telemetry
+2026-02-01 13:52:04,944 - INFO - Published event: device.telemetry
+2026-02-01 13:52:04,949 - INFO - Published event: device.telemetry
+2026-02-01 13:52:04,959 - INFO - Published event: device.telemetry
+2026-02-01 13:52:04,977 - INFO - Published event: device.telemetry
+2026-02-01 13:52:06,956 - INFO - Published event: device.telemetry
+2026-02-01 13:52:08,980 - INFO - Published event: device.telemetry
+2026-02-01 13:52:09,964 - INFO - Published event: device.telemetry
+2026-02-01 13:52:11,002 - INFO - Published event: device.telemetry
+2026-02-01 13:52:13,035 - INFO - Published event: device.telemetry
+2026-02-01 13:52:47,322 - INFO - Published event: device.telemetry
+2026-02-01 13:53:07,327 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 13:53:07,348 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 13:53:07,352 - INFO - Published event: device.telemetry
+2026-02-01 13:53:07,381 - INFO - Published event: device.telemetry
+2026-02-01 13:53:07,412 - INFO - Published event: device.telemetry
+2026-02-01 13:53:09,335 - INFO - Published event: device.telemetry
+2026-02-01 13:53:11,370 - INFO - Published event: device.telemetry
+2026-02-01 13:53:12,394 - INFO - Published event: device.telemetry
+2026-02-01 13:53:13,386 - INFO - Published event: device.telemetry
+2026-02-01 13:53:15,410 - INFO - Published event: device.telemetry
+2026-02-01 13:53:17,406 - INFO - Published event: device.telemetry
+2026-02-01 13:53:17,436 - INFO - Published event: device.telemetry
+2026-02-01 13:53:17,467 - INFO - Published event: device.telemetry
+2026-02-01 13:53:39,558 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 13:53:39,580 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 13:53:39,585 - INFO - Published event: device.telemetry
+2026-02-01 13:53:39,594 - INFO - Published event: device.telemetry
+2026-02-01 13:53:39,624 - INFO - Published event: device.telemetry
+2026-02-01 13:53:41,639 - INFO - Published event: device.telemetry
+2026-02-01 13:54:03,672 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -178, 1))
+2026-02-01 13:54:33,742 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 13:54:33,746 - INFO - Published event: device.telemetry
+2026-02-01 13:55:53,849 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -46, 1))
+2026-02-01 13:55:53,873 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 13:55:53,877 - INFO - Published event: device.telemetry
+2026-02-01 13:55:53,897 - INFO - Published event: device.telemetry
+2026-02-01 13:55:55,902 - INFO - Published event: device.telemetry
+2026-02-01 13:55:57,924 - INFO - Published event: device.telemetry
+2026-02-01 13:55:58,811 - INFO - Published event: device.telemetry
+2026-02-01 13:55:58,854 - INFO - Published event: device.telemetry
+2026-02-01 13:55:59,939 - INFO - Published event: device.telemetry
+2026-02-01 13:56:01,966 - INFO - Published event: device.telemetry
+2026-02-01 13:56:03,904 - INFO - Published event: device.telemetry
+2026-02-01 13:56:03,914 - INFO - Published event: device.telemetry
+2026-02-01 13:56:04,026 - INFO - Published event: device.telemetry
+2026-02-01 13:56:06,059 - INFO - Published event: device.telemetry
+2026-02-01 13:56:08,085 - INFO - Published event: device.telemetry
+2026-02-01 13:56:08,922 - INFO - Published event: device.telemetry
+2026-02-01 13:56:10,117 - INFO - Published event: device.telemetry
+2026-02-01 13:56:12,145 - INFO - Published event: device.telemetry
+2026-02-01 13:56:13,874 - INFO - Published event: device.telemetry
+2026-02-01 13:56:23,919 - INFO - Published event: device.telemetry
+2026-02-01 13:56:23,922 - INFO - Published event: device.telemetry
+2026-02-01 13:56:23,931 - INFO - Published event: device.telemetry
+2026-02-01 13:56:25,936 - INFO - Published event: device.telemetry
+2026-02-01 13:56:27,948 - INFO - Published event: device.telemetry
+2026-02-01 13:56:28,855 - INFO - Published event: device.telemetry
+2026-02-01 13:56:28,920 - INFO - Published event: device.telemetry
+2026-02-01 13:56:29,966 - INFO - Published event: device.telemetry
+2026-02-01 13:56:31,981 - INFO - Published event: device.telemetry
+2026-02-01 13:56:32,443 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:56:32,454 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:56:33,952 - INFO - Published event: device.telemetry
+2026-02-01 13:56:34,012 - INFO - Published event: device.telemetry
+2026-02-01 13:56:34,090 - INFO - Published event: device.telemetry
+2026-02-01 13:56:36,123 - INFO - Published event: device.telemetry
+2026-02-01 13:56:38,142 - INFO - Published event: device.telemetry
+2026-02-01 13:56:39,054 - INFO - Published event: device.telemetry
+2026-02-01 13:56:54,689 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -173, 1))
+2026-02-01 13:56:54,692 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:56:54,699 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 13:56:54,722 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 13:56:54,725 - INFO - Published event: device.telemetry
+2026-02-01 13:56:54,753 - INFO - Published event: device.telemetry
+2026-02-01 13:56:54,761 - INFO - Published event: device.telemetry
+2026-02-01 13:57:16,806 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -2, 1))
+2026-02-01 13:57:16,822 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 13:57:16,825 - INFO - Published event: device.telemetry
+2026-02-01 13:57:16,847 - INFO - Published event: device.telemetry
+2026-02-01 13:57:16,876 - INFO - Published event: device.telemetry
+2026-02-01 13:57:38,972 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -220, 1))
+2026-02-01 13:57:38,988 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 13:57:38,990 - INFO - Published event: device.telemetry
+2026-02-01 13:58:09,033 - INFO - Published event: device.telemetry
+2026-02-01 14:00:39,310 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -225, 1))
+2026-02-01 14:00:39,324 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:39,324 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:39,338 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:39,338 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:39,415 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:39,416 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:41,436 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:41,437 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:43,461 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:43,462 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:44,342 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:44,342 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:45,485 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:45,486 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:47,520 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:47,521 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:49,348 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:49,349 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:49,379 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:49,379 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:49,551 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:49,551 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:51,579 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:51,579 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:53,610 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:53,610 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:54,296 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:54,296 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:54,401 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:54,401 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:55,641 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:55,641 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:57,669 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:57,669 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:59,344 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:59,344 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:59,422 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:59,422 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:00:59,698 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:00:59,699 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:01,728 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:01,729 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:03,828 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:03,828 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:04,519 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:04,519 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:05,871 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:05,871 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:07,915 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:07,915 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:09,390 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:09,391 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:09,451 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:09,452 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:09,578 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:09,578 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:09,938 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:09,938 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:11,964 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:11,964 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:13,997 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:13,998 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:14,618 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:14,619 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:16,035 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:16,036 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:18,060 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:18,060 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:19,479 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:19,480 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:19,659 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:19,659 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:20,084 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:20,084 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:22,113 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:22,113 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:24,148 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:24,149 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:24,411 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:24,411 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:24,677 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:24,680 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:26,180 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:26,181 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:28,207 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:28,208 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:29,489 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:29,489 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:29,692 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:29,693 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:30,229 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:30,229 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:32,249 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:32,249 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:34,298 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:34,299 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:34,733 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:34,733 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:36,321 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:36,322 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:38,355 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:38,355 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:39,409 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:39,409 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:39,516 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:39,516 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:39,765 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:39,765 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:40,373 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:40,374 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:42,400 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:42,401 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:44,417 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:44,417 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:44,790 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:44,790 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:46,441 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:46,442 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:48,467 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:48,468 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:49,515 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:49,516 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:49,809 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:49,810 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:50,497 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:50,497 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:52,530 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:52,530 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:54,393 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:54,394 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:54,563 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:54,563 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:54,825 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:54,826 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:56,591 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:56,591 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:58,625 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:58,626 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:59,499 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:59,500 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:01:59,849 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:01:59,852 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:00,653 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:00,653 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:02,761 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:02,761 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:04,830 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:04,830 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:05,009 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:05,009 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:06,894 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:06,894 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:08,923 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:08,923 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:09,561 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:09,562 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:09,685 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:09,686 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:10,073 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:10,073 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:10,943 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:10,944 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:12,969 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:12,970 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:15,002 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:15,002 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:15,095 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:15,095 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:17,031 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:17,031 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:19,069 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:19,069 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:19,699 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:19,699 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:20,093 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:20,093 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:21,065 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:21,065 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:23,067 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:23,067 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:24,507 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:24,507 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:25,069 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:25,069 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:25,099 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:25,099 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:27,123 - ERROR - RabbitMQ connection failed: 
+2026-02-01 14:02:27,124 - ERROR - RabbitMQ publish error: 
+2026-02-01 14:02:29,157 - ERROR - RabbitMQ connection failed: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:29,157 - ERROR - RabbitMQ publish error: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:29,645 - ERROR - RabbitMQ connection failed: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:29,646 - ERROR - RabbitMQ publish error: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:30,081 - ERROR - RabbitMQ connection failed: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:30,081 - ERROR - RabbitMQ publish error: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:31,172 - ERROR - RabbitMQ connection failed: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:31,172 - ERROR - RabbitMQ publish error: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:33,246 - ERROR - RabbitMQ connection failed: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:33,246 - ERROR - RabbitMQ publish error: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:35,165 - ERROR - RabbitMQ connection failed: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:35,166 - ERROR - RabbitMQ publish error: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:35,290 - ERROR - RabbitMQ connection failed: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:35,291 - ERROR - RabbitMQ publish error: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:37,332 - ERROR - RabbitMQ connection failed: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:37,332 - ERROR - RabbitMQ publish error: StreamLostError: ('Transport indicated EOF',)
+2026-02-01 14:02:39,384 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:02:39,387 - INFO - Published event: device.telemetry
+2026-02-01 14:02:39,536 - INFO - Published event: device.telemetry
+2026-02-01 14:02:39,720 - INFO - Published event: device.telemetry
+2026-02-01 14:02:40,185 - INFO - Published event: device.telemetry
+2026-02-01 14:02:41,410 - INFO - Published event: device.telemetry
+2026-02-01 14:02:43,426 - INFO - Published event: device.telemetry
+2026-02-01 14:02:45,200 - INFO - Published event: device.telemetry
+2026-02-01 14:02:45,447 - INFO - Published event: device.telemetry
+2026-02-01 14:02:47,465 - INFO - Published event: device.telemetry
+2026-02-01 14:02:49,492 - INFO - Published event: device.telemetry
+2026-02-01 14:02:49,719 - INFO - Published event: device.telemetry
+2026-02-01 14:02:50,228 - INFO - Published event: device.telemetry
+2026-02-01 14:02:51,537 - INFO - Published event: device.telemetry
+2026-02-01 14:02:53,572 - INFO - Published event: device.telemetry
+2026-02-01 14:02:54,570 - INFO - Published event: device.telemetry
+2026-02-01 14:02:55,280 - INFO - Published event: device.telemetry
+2026-02-01 14:02:55,606 - INFO - Published event: device.telemetry
+2026-02-01 14:02:57,636 - INFO - Published event: device.telemetry
+2026-02-01 14:02:59,665 - INFO - Published event: device.telemetry
+2026-02-01 14:02:59,747 - INFO - Published event: device.telemetry
+2026-02-01 14:03:00,298 - INFO - Published event: device.telemetry
+2026-02-01 14:03:01,692 - INFO - Published event: device.telemetry
+2026-02-01 14:03:03,750 - INFO - Published event: device.telemetry
+2026-02-01 14:03:05,343 - INFO - Published event: device.telemetry
+2026-02-01 14:03:05,797 - INFO - Published event: device.telemetry
+2026-02-01 14:03:07,840 - INFO - Published event: device.telemetry
+2026-02-01 14:03:09,614 - INFO - Published event: device.telemetry
+2026-02-01 14:03:09,803 - INFO - Published event: device.telemetry
+2026-02-01 14:03:09,851 - INFO - Published event: device.telemetry
+2026-02-01 14:03:10,377 - INFO - Published event: device.telemetry
+2026-02-01 14:03:11,859 - INFO - Published event: device.telemetry
+2026-02-01 14:03:13,869 - INFO - Published event: device.telemetry
+2026-02-01 14:03:15,401 - INFO - Published event: device.telemetry
+2026-02-01 14:03:15,886 - INFO - Published event: device.telemetry
+2026-02-01 14:03:17,906 - INFO - Published event: device.telemetry
+2026-02-01 14:03:19,813 - INFO - Published event: device.telemetry
+2026-02-01 14:03:19,922 - INFO - Published event: device.telemetry
+2026-02-01 14:03:20,406 - INFO - Published event: device.telemetry
+2026-02-01 14:03:21,939 - INFO - Published event: device.telemetry
+2026-02-01 14:03:23,972 - INFO - Published event: device.telemetry
+2026-02-01 14:03:24,617 - INFO - Published event: device.telemetry
+2026-02-01 14:03:25,428 - INFO - Published event: device.telemetry
+2026-02-01 14:03:25,998 - INFO - Published event: device.telemetry
+2026-02-01 14:03:28,027 - INFO - Published event: device.telemetry
+2026-02-01 14:03:29,791 - INFO - Published event: device.telemetry
+2026-02-01 14:03:30,041 - INFO - Published event: device.telemetry
+2026-02-01 14:03:30,438 - INFO - Published event: device.telemetry
+2026-02-01 14:03:42,174 - INFO - Published event: device.telemetry
+2026-02-01 14:03:42,177 - INFO - Published event: device.telemetry
+2026-02-01 14:03:42,185 - INFO - Published event: device.telemetry
+2026-02-01 14:03:42,205 - INFO - Published event: device.telemetry
+2026-02-01 14:03:43,350 - INFO - Published event: device.telemetry
+2026-02-01 14:03:43,358 - INFO - Published event: device.telemetry
+2026-02-01 14:03:43,367 - INFO - Published event: device.telemetry
+2026-02-01 14:03:43,380 - INFO - Published event: device.telemetry
+2026-02-01 14:03:44,173 - INFO - Published event: device.telemetry
+2026-02-01 14:03:45,394 - INFO - Published event: device.telemetry
+2026-02-01 14:03:46,199 - INFO - Published event: device.telemetry
+2026-02-01 14:03:47,202 - INFO - Published event: device.telemetry
+2026-02-01 14:03:47,417 - INFO - Published event: device.telemetry
+2026-02-01 14:03:48,218 - INFO - Published event: device.telemetry
+2026-02-01 14:03:48,357 - INFO - Published event: device.telemetry
+2026-02-01 14:03:49,421 - INFO - Published event: device.telemetry
+2026-02-01 14:03:50,232 - INFO - Published event: device.telemetry
+2026-02-01 14:04:02,192 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -309, 1))
+2026-02-01 14:04:02,219 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:04:02,223 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:04:02,248 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:04:02,254 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -6, 1))
+2026-02-01 14:04:02,296 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:04:02,299 - INFO - Published event: device.telemetry
+2026-02-01 14:04:03,461 - INFO - Published event: device.telemetry
+2026-02-01 14:04:04,332 - INFO - Published event: device.telemetry
+2026-02-01 14:04:05,493 - INFO - Published event: device.telemetry
+2026-02-01 14:04:06,369 - INFO - Published event: device.telemetry
+2026-02-01 14:04:07,319 - INFO - Published event: device.telemetry
+2026-02-01 14:04:07,320 - INFO - Published event: device.telemetry
+2026-02-01 14:04:07,524 - INFO - Published event: device.telemetry
+2026-02-01 14:04:08,411 - INFO - Published event: device.telemetry
+2026-02-01 14:04:09,566 - INFO - Published event: device.telemetry
+2026-02-01 14:04:10,448 - INFO - Published event: device.telemetry
+2026-02-01 14:04:12,295 - INFO - Published event: device.telemetry
+2026-02-01 14:04:12,373 - INFO - Published event: device.telemetry
+2026-02-01 14:04:12,485 - INFO - Published event: device.telemetry
+2026-02-01 14:04:14,518 - INFO - Published event: device.telemetry
+2026-02-01 14:04:16,536 - INFO - Published event: device.telemetry
+2026-02-01 14:04:17,386 - INFO - Published event: device.telemetry
+2026-02-01 14:04:17,417 - INFO - Published event: device.telemetry
+2026-02-01 14:04:18,559 - INFO - Published event: device.telemetry
+2026-02-01 14:04:20,581 - INFO - Published event: device.telemetry
+2026-02-01 14:04:22,291 - INFO - Published event: device.telemetry
+2026-02-01 14:04:22,371 - INFO - Published event: device.telemetry
+2026-02-01 14:04:22,599 - INFO - Published event: device.telemetry
+2026-02-01 14:04:24,624 - INFO - Published event: device.telemetry
+2026-02-01 14:04:26,668 - INFO - Published event: device.telemetry
+2026-02-01 14:04:27,383 - INFO - Published event: device.telemetry
+2026-02-01 14:04:28,687 - INFO - Published event: device.telemetry
+2026-02-01 14:04:30,718 - INFO - Published event: device.telemetry
+2026-02-01 14:04:32,279 - INFO - Published event: device.telemetry
+2026-02-01 14:04:32,375 - INFO - Published event: device.telemetry
+2026-02-01 14:04:32,383 - INFO - Published event: device.telemetry
+2026-02-01 14:04:32,736 - INFO - Published event: device.telemetry
+2026-02-01 14:04:34,800 - INFO - Published event: device.telemetry
+2026-02-01 14:04:35,952 - INFO - Published event: device.telemetry
+2026-02-01 14:04:35,960 - INFO - Published event: device.telemetry
+2026-02-01 14:04:35,980 - INFO - Published event: device.telemetry
+2026-02-01 14:04:36,012 - INFO - Published event: device.telemetry
+2026-02-01 14:04:36,835 - INFO - Published event: device.telemetry
+2026-02-01 14:04:37,457 - INFO - Published event: device.telemetry
+2026-02-01 14:04:38,015 - INFO - Published event: device.telemetry
+2026-02-01 14:04:38,868 - INFO - Published event: device.telemetry
+2026-02-01 14:04:40,043 - INFO - Published event: device.telemetry
+2026-02-01 14:04:40,887 - INFO - Published event: device.telemetry
+2026-02-01 14:04:40,992 - INFO - Published event: device.telemetry
+2026-02-01 14:04:42,074 - INFO - Published event: device.telemetry
+2026-02-01 14:04:44,098 - INFO - Published event: device.telemetry
+2026-02-01 14:04:44,102 - INFO - Published event: device.telemetry
+2026-02-01 14:04:44,130 - INFO - Published event: device.telemetry
+2026-02-01 14:04:44,162 - INFO - Published event: device.telemetry
+2026-02-01 14:04:45,961 - INFO - Published event: device.telemetry
+2026-02-01 14:04:46,019 - INFO - Published event: device.telemetry
+2026-02-01 14:04:46,116 - INFO - Published event: device.telemetry
+2026-02-01 14:04:46,190 - INFO - Published event: device.telemetry
+2026-02-01 14:04:47,427 - INFO - Published event: device.telemetry
+2026-02-01 14:04:48,142 - INFO - Published event: device.telemetry
+2026-02-01 14:04:48,221 - INFO - Published event: device.telemetry
+2026-02-01 14:04:49,150 - INFO - Published event: device.telemetry
+2026-02-01 14:04:50,172 - INFO - Published event: device.telemetry
+2026-02-01 14:04:50,250 - INFO - Published event: device.telemetry
+2026-02-01 14:04:51,025 - INFO - Published event: device.telemetry
+2026-02-01 14:04:51,055 - INFO - Published event: device.telemetry
+2026-02-01 14:04:52,201 - INFO - Published event: device.telemetry
+2026-02-01 14:04:52,277 - INFO - Published event: device.telemetry
+2026-02-01 14:04:54,099 - INFO - Published event: device.telemetry
+2026-02-01 14:04:54,162 - INFO - Published event: device.telemetry
+2026-02-01 14:04:54,297 - INFO - Published event: device.telemetry
+2026-02-01 14:04:54,301 - INFO - Published event: device.telemetry
+2026-02-01 14:04:55,954 - INFO - Published event: device.telemetry
+2026-02-01 14:04:56,061 - INFO - Published event: device.telemetry
+2026-02-01 14:04:56,326 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -6, 1))
+2026-02-01 14:04:58,367 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:04:58,369 - INFO - Published event: device.telemetry
+2026-02-01 14:04:58,372 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:04:58,376 - INFO - Published event: device.telemetry
+2026-02-01 14:04:59,162 - INFO - Published event: device.telemetry
+2026-02-01 14:05:00,384 - INFO - Published event: device.telemetry
+2026-02-01 14:05:00,398 - INFO - Published event: device.telemetry
+2026-02-01 14:05:01,078 - INFO - Published event: device.telemetry
+2026-02-01 14:05:02,409 - INFO - Published event: device.telemetry
+2026-02-01 14:05:12,531 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -46, 1))
+2026-02-01 14:05:12,533 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -46, 1))
+2026-02-01 14:05:12,551 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:12,553 - INFO - Published event: device.telemetry
+2026-02-01 14:05:12,560 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:12,563 - INFO - Published event: device.telemetry
+2026-02-01 14:05:12,587 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -6, 1))
+2026-02-01 14:05:17,556 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:17,557 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:17,558 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:17,558 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:17,617 - INFO - Published event: device.telemetry
+2026-02-01 14:05:17,619 - ERROR - RabbitMQ connection failed: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:17,619 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:19,595 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:19,595 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:19,597 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:19,597 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:21,639 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:21,639 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:21,641 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:21,641 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:22,550 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:22,550 - ERROR - RabbitMQ connection failed: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:22,551 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:22,642 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:22,644 - INFO - Published event: device.telemetry
+2026-02-01 14:05:22,652 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:22,655 - INFO - Published event: device.telemetry
+2026-02-01 14:05:23,647 - INFO - Published event: device.telemetry
+2026-02-01 14:05:23,658 - INFO - Published event: device.telemetry
+2026-02-01 14:05:25,676 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -6, 1))
+2026-02-01 14:05:27,539 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:27,542 - INFO - Published event: device.telemetry
+2026-02-01 14:05:27,552 - INFO - Published event: device.telemetry
+2026-02-01 14:05:27,663 - INFO - Published event: device.telemetry
+2026-02-01 14:05:27,665 - INFO - Published event: device.telemetry
+2026-02-01 14:05:27,680 - INFO - Published event: device.telemetry
+2026-02-01 14:05:27,716 - INFO - Published event: device.telemetry
+2026-02-01 14:05:29,719 - INFO - Published event: device.telemetry
+2026-02-01 14:05:29,750 - INFO - Published event: device.telemetry
+2026-02-01 14:05:41,831 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:41,831 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:41,875 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:41,875 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:41,877 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:41,877 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:05:41,919 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:05:41,922 - INFO - Published event: device.telemetry
+2026-02-01 14:05:52,608 - INFO - Published event: device.telemetry
+2026-02-01 14:06:32,367 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 14:06:44,904 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 14:06:54,004 - INFO - Published event: device.telemetry
+2026-02-01 14:06:54,007 - INFO - Published event: device.telemetry
+2026-02-01 14:06:54,009 - ERROR - RabbitMQ publish error: Stream connection lost: IndexError('pop from an empty deque')
+2026-02-01 14:06:54,014 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 14:06:54,023 - INFO - User redabelghiti27@gmail.com getting devices - status: None, type: None, page: 1
+2026-02-01 14:06:54,041 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:06:54,043 - INFO - Published event: device.telemetry
+2026-02-01 14:06:56,052 - INFO - Published event: device.telemetry
+2026-02-01 14:06:57,721 - INFO - Published event: device.telemetry
+2026-02-01 14:06:57,736 - INFO - Published event: device.telemetry
+2026-02-01 14:06:58,070 - INFO - Published event: device.telemetry
+2026-02-01 14:07:00,090 - INFO - Published event: device.telemetry
+2026-02-01 14:07:02,108 - INFO - Published event: device.telemetry
+2026-02-01 14:07:02,753 - INFO - Published event: device.telemetry
+2026-02-01 14:07:04,028 - INFO - Published event: device.telemetry
+2026-02-01 14:07:04,152 - INFO - Published event: device.telemetry
+2026-02-01 14:07:06,168 - INFO - Published event: device.telemetry
+2026-02-01 14:07:07,815 - INFO - Published event: device.telemetry
+2026-02-01 14:07:38,267 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -46, 1))
+2026-02-01 14:07:38,293 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:07:38,295 - INFO - Published event: device.telemetry
+2026-02-01 14:07:38,323 - INFO - Published event: device.telemetry
+2026-02-01 14:07:40,344 - INFO - Published event: device.telemetry
+2026-02-01 14:07:42,376 - INFO - Published event: device.telemetry
+2026-02-01 14:07:43,277 - INFO - Published event: device.telemetry
+2026-02-01 14:07:53,318 - INFO - Published event: device.telemetry
+2026-02-01 14:07:53,319 - INFO - Published event: device.telemetry
+2026-02-01 14:07:53,327 - INFO - Published event: device.telemetry
+2026-02-01 14:07:55,338 - INFO - Published event: device.telemetry
+2026-02-01 14:07:57,365 - INFO - Published event: device.telemetry
+2026-02-01 14:08:28,282 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -9, 1))
+2026-02-01 14:08:28,301 - INFO - RabbitMQ connected: host.docker.internal:5672
+2026-02-01 14:08:28,304 - INFO - Published event: device.telemetry
+2026-02-01 14:08:28,335 - INFO - Published event: device.telemetry
+2026-02-01 14:08:58,365 - ERROR - RabbitMQ publish error: Stream connection lost: AssertionError(('_AsyncTransportBase._produce() tx buffer size underflow', -3, 1))

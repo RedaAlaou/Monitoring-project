@@ -1,0 +1,128 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: device-management
+  labels:
+    app: device-management
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: device-management
+  template:
+    metadata:
+      labels:
+        app: device-management
+        version: v1
+    spec:
+      containers:
+        - name: device-management
+          image: localhost:32000/device-management:1.0
+          ports:
+            - containerPort: 8001
+          env:
+            # Database Configuration
+            - name: SERVER_DB
+              valueFrom:
+                configMapKeyRef:
+                  name: device-management-cm
+                  key: SERVER_DB
+            - name: NAME_DB
+              valueFrom:
+                configMapKeyRef:
+                  name: device-management-cm
+                  key: NAME_DB
+            - name: USER_DB
+              valueFrom:
+                configMapKeyRef:
+                  name: device-management-cm
+                  key: USER_DB
+            - name: PASSWORD_DB
+              valueFrom:
+                secretKeyRef:
+                  name: device-management-secret
+                  key: PASSWORD_DB
+            # Redis Configuration
+            - name: REDIS_HOST
+              value: "redis-service"
+            - name: REDIS_PORT
+              value: "6379"
+            # RabbitMQ Configuration
+            - name: RABBITMQ_HOST
+              value: "rabbitmq-service"
+            - name: RABBITMQ_PORT
+              value: "5672"
+            # JWT Configuration
+            - name: JWT_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: secret-key
+            - name: JWT_ALGORITHM
+              value: "HS256"
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8001
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8001
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          volumeMounts:
+            - name: logs-volume
+              mountPath: /app/logs
+      volumes:
+        - name: logs-volume
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: device-management-service
+spec:
+  selector:
+    app: device-management
+  ports:
+    - protocol: TCP
+      port: 8001
+      targetPort: 8001
+  type: ClusterIP
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: device-management-cm
+data:
+  SERVER_DB: "db-service"
+  NAME_DB: "db_device_management"
+  USER_DB: "admin"
+  REDIS_HOST: "redis-service"
+  RABBITMQ_HOST: "rabbitmq-service"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: device-management-secret
+type: Opaque
+stringData:
+  PASSWORD_DB: "1234"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: jwt-secret
+type: Opaque
+stringData:
+  secret-key: "your-jwt-secret-key-change-in-production"

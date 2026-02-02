@@ -1,0 +1,43 @@
+
+services:
+  device-management:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: device-management-ms
+    environment:
+      - SERVER_DB=db
+      - NAME_DB=db_device_management
+      - USER_DB=admin
+      - PASSWORD_DB=1234
+      - RABBITMQ_HOST=host.docker.internal
+      - RABBITMQ_PORT=5672
+    ports:
+      - "8001:8001"
+    volumes:
+      - ../logs:/app/logs
+    networks:
+      - net-device-management
+    depends_on:
+      - db
+
+  db:
+    image: postgres:alpine
+    container_name: postgresql-device
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=db_device_management
+    ports:
+      - "15432:5432"
+    networks:
+      - net-device-management
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+networks:
+  net-device-management:
+    driver: bridge
+
+volumes:
+  pgdata:

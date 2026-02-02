@@ -1,0 +1,4 @@
+# Computer Monitoring Client Dependencies
+psutil>=5.9.0          # System metrics (CPU, RAM, Disk, Network)
+requests>=2.28.0       # HTTP client for API calls
+GPUtil>=1.4.0          # NVIDIA GPU monitoring (optional)

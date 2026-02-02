@@ -1,0 +1,75 @@
+# Standalone Docker Compose for Monitoring Microservice
+# Run independently: docker-compose -f docker/docker-compose.yml up -d
+
+services:
+  # MongoDB for Monitoring
+  mongodb:
+    image: mongo:7.0
+    container_name: iot-monitoring-mongodb
+    environment:
+      MONGO_INITDB_DATABASE: monitoring
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - monitoring-network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # RabbitMQ for Messaging
+  rabbitmq:
+    image: rabbitmq:3.12-management
+    container_name: iot-monitoring-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - monitoring-network
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Monitoring Microservice
+  monitoring-service:
+    build:
+      context: ../../
+      dockerfile: monitoring/Dockerfile
+    image: iot-monitoring:1.0
+    container_name: iot-monitoring-service
+    environment:
+      MONGODB_URL: mongodb://mongodb:27017
+      MONGODB_DB: monitoring
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: "5672"
+      RABBITMQ_USER: guest
+      RABBITMQ_PASSWORD: guest
+      MONITORING_EXCHANGE: device_events
+    ports:
+      - "8002:8002"
+    networks:
+      - monitoring-network
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    restart: unless-stopped
+
+networks:
+  monitoring-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
+  rabbitmq_data:

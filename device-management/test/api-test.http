@@ -1,0 +1,125 @@
+# Device Management API Test File
+# Use with VSCode REST Client extension or similar
+
+@baseUrl = http://localhost:8001/api/v1
+
+### Health Check
+GET {{baseUrl}}/health
+
+### Get All Devices (no auth required for testing)
+GET {{baseUrl}}/devices
+
+### Get In Stock Devices
+GET {{baseUrl}}/devices/in_stock
+
+### Get Deployed Devices
+GET {{baseUrl}}/devices/deployed
+
+### Get Devices in Maintenance
+GET {{baseUrl}}/devices/maintenance
+
+### Get Single Device
+GET {{baseUrl}}/devices/1
+
+### Create Device - Temperature Sensor
+POST {{baseUrl}}/devices
+Content-Type: application/json
+
+{
+  "name": "Temperature Sensor 001",
+  "type": "sensor",
+  "serial_number": "SN-TEMP-001-2025",
+  "description": "Main building temperature sensor",
+  "location": "Warehouse A",
+  "specifications": "{\"range\": \"-40 to 85C\", \"accuracy\": \"±0.5C\"}"
+}
+
+### Create Device - Humidity Sensor
+POST {{baseUrl}}/devices
+Content-Type: application/json
+
+{
+  "name": "Humidity Sensor 001",
+  "type": "sensor",
+  "serial_number": "SN-HUM-001-2025",
+  "description": "Humidity monitoring sensor",
+  "location": "Warehouse B",
+  "specifications": "{\"range\": \"0-100%\", \"accuracy\": \"±2%\"}"
+}
+
+### Create Device - Gateway
+POST {{baseUrl}}/devices
+Content-Type: application/json
+
+{
+  "name": "IoT Gateway 001",
+  "type": "gateway",
+  "serial_number": "SN-GATE-001-2025",
+  "description": "Main IoT gateway for building A",
+  "location": "Server Room",
+  "specifications": "{\"protocols\": [\"MQTT\", \"HTTP\", \"CoAP\"], \"ports\": 8}"
+}
+
+### Create Device - Actuator
+POST {{baseUrl}}/devices
+Content-Type: application/json
+
+{
+  "name": "Smart Valve Controller",
+  "type": "actuator",
+  "serial_number": "SN-ACT-001-2025",
+  "description": "Water valve actuator for HVAC",
+  "location": "Building A - Floor 1",
+  "specifications": "{\"voltage\": \"24V\", \"torque\": \"10Nm\"}"
+}
+
+### Create Device - Controller
+POST {{baseUrl}}/devices
+Content-Type: application/json
+
+{
+  "name": "HVAC Controller 001",
+  "type": "controller",
+  "serial_number": "SN-CTRL-001-2025",
+  "description": "Main HVAC controller",
+  "location": "Building A - Basement",
+  "specifications": "{\"inputs\": 16, \"outputs\": 8, \"protocol\": \"Modbus\"}"
+}
+
+### Update Device
+PUT {{baseUrl}}/devices/1
+Content-Type: application/json
+
+{
+  "name": "Updated Sensor Name",
+  "description": "Updated description"
+}
+
+### Deploy Device (requires device to be in_stock)
+PUT {{baseUrl}}/devices/1/deploy
+Content-Type: application/json
+
+{
+  "location": "Building A - Floor 2",
+  "notes": "Primary temperature monitoring"
+}
+
+### Recall Device (requires device to be deployed)
+PUT {{baseUrl}}/devices/1/recall
+Content-Type: application/json
+
+{
+  "location": "Warehouse B",
+  "notes": "Returned for calibration"
+}
+
+### Send to Maintenance
+PUT {{baseUrl}}/devices/1/maintenance
+Content-Type: application/json
+
+{
+  "notes": "Annual calibration check"
+}
+
+### Delete (Retire) Device
+DELETE {{baseUrl}}/devices/1
