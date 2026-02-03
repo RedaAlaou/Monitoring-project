@@ -1,0 +1,57 @@
+apiVersion: v1
+data:
+  auth.log: |
+    2025-12-25 10:07:00,224-INFO-user register ok user1@app.com
+    2025-12-25 10:07:08,794-INFO-Authetication for user ; user1@app.com
+    2025-12-25 10:07:30,235-INFO-get all users from ip :
+    2025-12-25 11:06:05,310-INFO-user register ok REDA@app.com
+    2025-12-25 11:06:26,663-ERROR-Authentication faild fro user : user1@app.com
+    2025-12-25 11:06:50,844-INFO-Authetication for user ; REDA@app.com
+    2025-12-25 11:06:53,815-INFO-user register ok ElamraniHaytam@app.com
+    2025-12-25 11:07:02,477-INFO-get all users from ip :
+    2025-12-25 11:07:06,722-INFO-get all users from ip :
+    2025-12-25 11:07:13,582-INFO-get all users from ip :
+    2025-12-25 11:07:22,535-INFO-get all users from ip :
+    2025-12-25 11:07:47,330-INFO-user register ok ismail.arr@app.com
+    2025-12-25 11:07:47,429-INFO-Authetication for user ; ismail.arr@app.com
+    2025-12-25 11:07:47,647-ERROR-registration faild for user ismail.arr@app.com
+    2025-12-25 11:07:47,886-INFO-user register ok Belkhou@app.com
+    2025-12-25 11:07:48,379-ERROR-registration faild for user ismail.arr@app.com
+    2025-12-25 11:07:49,323-ERROR-registration faild for user ismail.arr@app.com
+    2025-12-25 11:07:50,166-ERROR-registration faild for user ismail.arr@app.com
+    2025-12-25 11:07:51,723-INFO-Authetication for user ; ismail.arr@app.com
+    2025-12-25 11:07:59,553-INFO-Authetication for user ; ismail.arr@app.com
+    2025-12-25 11:08:11,730-INFO-get all users from ip :
+    2025-12-25 11:08:14,005-INFO-Authetication for user ; Belkhou@app.com
+    2025-12-25 11:08:25,272-ERROR-registration faild for user ismail.arr@app.com
+    2025-12-25 11:15:51,819-INFO-user register ok ElamraniHaytam@app.com
+    2025-12-25 11:15:53,868-INFO-user register ok REDA@app.com
+    2025-12-25 11:15:59,285-INFO-user register ok Belkhou@app.com
+    2025-12-25 11:15:59,489-INFO-user register ok ismail.arr@app.com
+    2025-12-25 11:16:00,476-INFO-Authetication for user ; REDA@app.com
+    2025-12-25 11:16:03,467-ERROR-registration faild for user ismail.arr@app.com
+    2025-12-25 11:16:04,803-ERROR-registration faild for user Belkhou@app.com
+    2025-12-25 11:16:07,415-INFO-Authetication for user ; ismail.arr@app.com
+    2025-12-25 11:16:08,753-INFO-user register ok ElamraniHaytam1@app.com
+    2025-12-25 11:16:08,841-ERROR-registration faild for user Belkhou@app.com
+    2025-12-25 11:16:09,499-ERROR-registration faild for user Belkhou@app.com
+    2025-12-25 11:16:12,121-INFO-Authetication for user ; Belkhou@app.com
+    2025-12-25 11:16:16,163-INFO-user register ok ali@app.com
+    2025-12-25 11:16:24,727-ERROR-registration faild for user ismail.arr@app.com
+    2025-12-25 11:16:26,527-ERROR-registration faild for user REDA@app.com
+    2025-12-25 11:16:27,205-INFO-user register ok ElamraniHaytam2@app.com
+    2025-12-25 11:16:27,787-INFO-Authetication for user ; ismail.arr@app.com
+    2025-12-25 11:16:28,079-INFO-Authetication for user ; Belkhou@app.com
+    2025-12-25 11:16:32,979-INFO-Authetication for user ; REDA@app.com
+    2025-12-25 11:16:48,236-ERROR-registration faild for user ali@app.com
+    2025-12-25 11:16:56,172-ERROR-registration faild for user ali@app.com
+    2025-12-25 11:17:02,294-INFO-Authetication for user ; Belkhou@app.com
+    2025-12-25 11:17:05,541-INFO-Authetication for user ; Belkhou@app.com
+    2025-12-25 11:17:06,968-INFO-Authetication for user ; Belkhou@app.com
+    2025-12-25 11:17:14,926-INFO-user register ok user2@app.com
+    2025-12-25 11:17:34,627-INFO-user register ok ElamraniHaytam3@app.com
+kind: ConfigMap
+metadata:
+  labels:
+    io.kompose.service: backend
+  name: backend-cm0

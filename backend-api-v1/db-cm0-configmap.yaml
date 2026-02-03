@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  init.sql: CREATE DATABASE db_auth
+kind: ConfigMap
+metadata:
+  annotations:
+    use-subpath: "true"
+  labels:
+    io.kompose.service: db
+  name: db-cm0

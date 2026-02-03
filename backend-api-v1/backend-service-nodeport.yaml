@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-nodeport
+  labels:
+    io.kompose.service: backend
+spec:
+  type: NodePort
+  ports:
+    - name: "8000"
+      port: 8000
+      targetPort: 8000
+      nodePort: 30080  # NodePort range: 30000-32767
+  selector:
+    io.kompose.service: backend
+
